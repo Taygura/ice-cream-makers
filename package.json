@@ -1,5 +1,5 @@
 {
-  "name": "IceCreamMakers",
+  "name": "iceireammakers",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://SerhiiShymko.github.io/IceCreamMakers",
@@ -18,7 +18,8 @@
     "url": "https://github.com/SerhiiShymko/IceCreamMakers/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
