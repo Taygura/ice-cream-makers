@@ -1,3 +1,9 @@
-@import './common';
-@import './example';
-@import '../js/swiper-bundle.js';
+// base
+@import './base/base';
+@import './base/reset';
+@import './base/variables';
+// layout
+@import './layout/header';
+// components
+@import './components/container';
+@import './components/button';
