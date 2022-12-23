@@ -1,8 +1,8 @@
-.button {
+button {
   display: inline-block;
   flex: 0 0 auto;
   text-align: center;
-
+  // cursor: pointer;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.28; /* 18/14 */
@@ -10,9 +10,26 @@
   color: #000;
   border-radius: 10px;
   border: 2px solid #f8d24e;
-  transition: background-color 0.3s var(--timings) 0s;
+  transition: background-color 0.3s var(--timings) 0s,
+    border 0.3s var(--timings) 0s;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #0a8817;
+  }
 }
 
-.button-yellow {
-  background: #f8d24e;
+.button--filling {
+  background-color: #f8d24e;
+  &:hover,
+  &:focus {
+    background-color: #0a8817;
+  }
+}
+.button--transparent {
+  border: none;
+  &:hover,
+  &:focus {
+    border: none;
+  }
 }
