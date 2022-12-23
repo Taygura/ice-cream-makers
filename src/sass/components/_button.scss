@@ -1,4 +1,4 @@
-button {
+.button {
   display: inline-block;
   flex: 0 0 auto;
   text-align: center;
@@ -11,7 +11,7 @@ button {
   border-radius: 10px;
   border: 2px solid #f8d24e;
   transition: background-color 0.3s var(--timings) 0s,
-    border 0.3s var(--timings) 0s;
+    border 0.3s var(--timings) 0s, color 0.3s var(--timings) 0s;
 
   &:hover,
   &:focus {
@@ -27,9 +27,14 @@ button {
   }
 }
 .button--transparent {
+  color: #f8d24e;
   border: none;
-  &:hover,
+  &:hover {
+    border: none;
+    color: #0a8817;
+  }
   &:focus {
     border: none;
+    color: #fcfcfc;
   }
 }
