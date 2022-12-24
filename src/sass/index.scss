@@ -2,8 +2,27 @@
 @import './base/base';
 @import './base/reset';
 @import './base/variables';
+
+// mixins
+@import './utils/mixins';
+
 // layout
-@import './layout/header';
+@import './layout/header-hero';
+@import './layout/product';
+@import './layout/about_';
+@import './layout/advantages';
+@import './layout/swiper-image';
+@import './layout/swiper-reviews';
+@import './layout/contakts';
+@import './layout/footer';
+@import './layout/burger-menu';
+@import './layout/modal-menu';
+@import './layout/modal-buy';
+@import './layout/modal-franchise';
+@import './layout/modal-locations';
+@import './layout/modal-product';
+@import './layout/modal-video';
+
 // components
 @import './components/container';
 @import './components/button';
