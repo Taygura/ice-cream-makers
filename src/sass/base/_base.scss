@@ -1,8 +1,36 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url(../images/BG_image/bg_desctop.jpg);
   font-weight: 400;
-  color: var(--main-color-text);
+  color: #fcfcfc;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (max-width: 767.98px) {
+    background-image: url(../images/bg_image/bg_tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg_image/bg_tablet.jpg);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bg_image/bg_tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg_image/bg_tablet.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/bg_image/bg_desctop.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg_image/bg_desctop.jpg);
+    }
+  }
 }
 .wrapper {
   min-height: 100%;
