@@ -9,27 +9,27 @@ body {
   background-size: cover;
 
   @media screen and (max-width: 767.98px) {
-    background-image: url(../images/bg_image/bg_tablet.jpg);
+    background-image: url(../images/bg_image/bg_phone_1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/bg_image/bg_tablet.jpg);
+      background-image: url(../images/bg_image/bg_phone_2x.jpg);
     }
   }
   @media screen and (min-width: 768px) {
-    background-image: url(../images/bg_image/bg_tablet.jpg);
+    background-image: url(../images/bg_image/bg_tablet_1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/bg_image/bg_tablet.jpg);
+      background-image: url(../images/bg_image/bg_tablet_2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/bg_image/bg_desctop.jpg);
+    background-image: url(../images/bg_image/bg_desctop_1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/bg_image/bg_desctop.jpg);
+      background-image: url(../images/bg_image/bg_desctop_2x.jpg);
     }
   }
 }
