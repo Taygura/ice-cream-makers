@@ -3,6 +3,10 @@
 @import './base/reset';
 @import './base/variables';
 
+// components
+@import './components/container';
+@import './components/button';
+
 // mixins
 @import './utils/mixins';
 
@@ -21,8 +25,3 @@
 @import './layout/modal-locations';
 @import './layout/modal-product';
 @import './layout/modal-video';
-
-// components
-@import './components/container';
-@import './components/button';
-
