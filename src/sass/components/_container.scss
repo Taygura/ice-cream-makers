@@ -1,35 +1,17 @@
 [class*='__container'] {
   margin: 0 auto;
-  padding: 0 20px;
-  max-width: 480px;
+  max-width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
-// @include mq(phone-only) {
-//   padding-right: 20px;
-//   padding-left: 20px;
-
-//   @media (min-device-pixel-ratio: 2),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-//     background-image: url(../images/BG_image/bg_phone.jpg);
-//   }
-// }
-// @include mq(tablet) {
-//   padding-right: 32px;
-//   padding-left: 32px;
-
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url(../images/BG_image/bg_tablet.jpg);
-//   }
-// }
-// @include mq(desktop) {
-//   padding-right: 16px;
-//   padding-left: 16px;
-
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url(../images/BG_image/bg_desctop.jpg);
-//   }
-// }

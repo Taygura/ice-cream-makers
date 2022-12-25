@@ -13,17 +13,27 @@
   transition: background-color 0.3s var(--timings) 0s,
     border 0.3s var(--timings) 0s, color 0.3s var(--timings) 0s;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 2px solid #0a8817;
+  }
+  @media screen and (min-width: 1200px) {
+    &:focus {
+      color: #fcfcfc;
+      border: 2px solid #0a8817;
+    }
   }
 }
 
 .button--filling {
   background-color: #f8d24e;
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: #0a8817;
+  }
+  @media screen and (min-width: 1200px) {
+    &:focus {
+      color: #fcfcfc;
+      background-color: #0a8817;
+    }
   }
 }
 .button--transparent {
@@ -33,8 +43,10 @@
     border: none;
     color: #0a8817;
   }
-  &:focus {
-    border: none;
-    color: #fcfcfc;
+  @media screen and (min-width: 1200px) {
+    &:focus {
+      border: none;
+      color: #fcfcfc;
+    }
   }
 }
