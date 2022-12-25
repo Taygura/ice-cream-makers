@@ -1,33 +1,37 @@
 <footer class="footer">
       <div class="container">
+
+<!--Footer buttons-->
+
         <ul class="footer_btn-list list">
           <li class="footer_btn-item">
-            <button type="button" class="footer-location__button button button--filling">
-              Our Locations<svg class="icon-biger" width="5px" height="10px">
-                <use href="./image/symbol-defs.svg#biger"></use>
+            <button type="button" class="footer-locations__button button button--filling" data-modal-location-open>
+              Our Locations<svg class="icon-arrow-right" width="5px" height="10px">
+                <use href="/src/images/icons.svg#icon-arrow-right"></use>
               </svg>
             </button>
           </li>
           <li class="footer_btn-item">
-            <button type="button" class="footer-franchise__button button button--transparent">
-              Franchise<svg class="icon-biger" width="5px" height="10px">
-                <use href="./image/symbol-defs.svg#biger"></use>
+            <button type="button" class="footer-franchise__button button" data-modal-franchise-open>
+              Franchise<svg class="icon-arrow-right" width="5px" height="10px">
+                <use href="/src/images/icons.svg#icon-arrow-right"></use>
               </svg>
             </button>
           </li>
         </ul>
-        <ul class="footer-content list">
-          <li class="footer-main_item">
-            <ul class="footer_titles-list list">
-              <li class="footer_titles-item footer_homemade-title">
-                homemade ice cream made
-              </li>
-              <li class="footer_titles-item footer_passion-title">
-                with passion
-              </li>
-            </ul>
-          </li>
-          <li class="footer-main_item footer-links">
+
+<!--Footer content-->
+
+<div class="footer-content">
+        <div class="footer_titles">
+               <p class="footer_homemade-title">homemade ice cream made</p> 
+               <p class="footer_passion-title">with passion</p>
+            </div>
+          
+          <!--Footer links-->
+
+          
+    <div class="footer-links">
             <ul class="footer_icons-list list">
               <li class="footer_icon-item">
                 <a
@@ -37,7 +41,7 @@
                   rel="noreferrer noopener nofollow"
                 >
                   <svg class="icon-github" width="20px" height="20px">
-                    <use href="./image/symbol-defs.svg#git"></use>
+                    <use href="/src/images/icons.svg#icon-github"></use>
                   </svg>
                 </a>
               </li>
@@ -49,7 +53,7 @@
                   rel="noreferrer noopener nofollow"
                 >
                   <svg class="icon-telegram" width="20.4px" height="15.87px">
-                    <use href="./image/symbol-defs.svg#telegram"></use>
+                    <use href="/src/images/icons.svg#icon-telegram"></use>
                   </svg>
                 </a>
               </li>
@@ -61,7 +65,7 @@
                   rel="noreferrer noopener nofollow"
                 >
                   <svg class="icon-facebook" width="9.35px" height="20.4px">
-                    <use href="./image/symbol-defs.svg#facebook"></use>
+                    <use href="/src/images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
@@ -69,9 +73,11 @@
             <a class="footer_tel" href="tel:+610383766284"
               ><span class="footer_tel-text">Feel free to contact </span>+61 (0) 383 766 284</a
             >
-          </li>
-        </ul>
-      </div>
+            </div>
+            </div>
+            </div>
+
+            
       <div class="copyright">
         <div class="container">
           <p class="copyright_text">© 2022 - IceCream. All Rights Reserved.</p>

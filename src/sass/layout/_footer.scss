@@ -5,6 +5,7 @@
     @media screen and (min-width: 768px) {
         padding-top: 278px;
     }
+
     @media screen and (min-width: 1200px) {
         padding-top: 474px;
     }
@@ -16,6 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0;
     margin-left: auto;
     margin-right: auto;
     color: #131313;
@@ -31,38 +33,14 @@
     }
 }
 
-.footer-location__button {
-    padding: 12px 38px;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background-color: #0A8817;
-    }
-
-    &:focus {
-        color: #FCFCFC;
-    }
+.footer-locations__button {
+    padding: 10px 38px;
+    border: none;
 }
 
 .footer-franchise__button {
-    padding: 10px 54px;
-
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        border: 2px solid #0A8817;
-    }
-
-    &:focus {
-        color: #FCFCFC;
-    }
+    padding: 10px 53px;
+    border: 2px solid #F8D24E;
 
     @media screen and (max-width: 767px) {
         margin-top: 16px;
@@ -73,7 +51,7 @@
     }
 }
 
-.icon-biger {
+.icon-arrow-right {
     margin-left: 4px;
     width: 12px;
     height: 12px;
@@ -84,23 +62,29 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-location__button:focus .icon-biger,
-.footer-franchise__button:focus .icon-biger {
-    fill: #FCFCFC;
+.footer-locations__button:focus .icon-arrow-right,
+.footer-franchise__button:focus .icon-arrow-right {
+
+    @media screen and (min-width: 1200px) {
+        fill: #FCFCFC;
+    }
+    
+
 }
 
 /*Footer titles*/
 
 .footer-content {
     display: block;
-    justify-content: space-between;
+
 
     @media screen and (min-width: 768px) {
         display: flex;
+        justify-content: space-between;
     }
 }
 
-.footer_titles-list {
+.footer_titles {
     display: inline-block;
     margin-top: 60px;
     text-transform: uppercase;
@@ -166,15 +150,26 @@
 }
 
 /*Links*/
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        align-items: flex-end;
+    }
+}
 
 .footer_icons-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0;
     margin-left: auto;
     margin-top: 60px;
     max-width: 142px;
 
+    
     @media screen and (min-width: 768px) {
         margin-top: 101px;
         width: 162px;
@@ -190,6 +185,13 @@
     width: 34px;
     height: 34px;
 }
+.footer_icon-item:not(:last-child) {
+
+    @media screen and (max-width: 767px) {
+         margin-right: 20px;   
+        }
+}
+
 
 .footer_icon-link {
     display: flex;
@@ -258,7 +260,15 @@
     line-height: 186%;
     color: #131313;
 
+    @media screen and (min-width: 768px) {
+        height: 27px;
+        font-size: 14px;
+    }
 
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
 }
 
 .copyright {
@@ -279,6 +289,10 @@
     @media screen and (min-width: 768px) {
         height: 50px;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .copyright_text {
@@ -296,74 +310,8 @@
     @media screen and (max-width: 767px) {
         width: 140px;
     }
-    
+
     @media screen and (min-width: 768px) {
         margin-top: 12px;
     }
 }
-
-
-/*.button {
-    display: inline-block;
-    flex: 0 0 auto;
-    text-align: center;
-    // cursor: pointer;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.28;
-    color: #000;
-    border-radius: 10px;
-    border: 2px solid #f8d24e;
-    transition: background-color 0.3s var(--timings) 0s,
-        border 0.3s var(--timings) 0s, color 0.3s var(--timings) 0s;
-
-    &:hover,
-    &:focus {
-        background-color: #0a8817;
-        border: 2px solid #0a8817;
-    }
-
-    &:focus {
-        color: #FCFCFC;
-    }
-}
-
-.button--filling {
-    border: none;
-    background-color: #f8d24e;
-
-    &:hover,
-    &:focus {
-        border: none;
-        background-color: #0a8817;
-    }
-}
-
-.button--transparent {
-    background-color: transparent;
-    border-color: 2px solid #f8d24e;
-
-    &:hover,
-    &:focus {
-        background-color: transparent;
-        border: 2px solid #0a8817;
-    }
-
-    &:focus {
-        background-color: transparent;
-        color: #fcfcfc;
-    }
-}
-
-button,
-input {
-    font-weight: inherit;
-    font-size: inherit;
-    color: inherit;
-    font-family: inherit;
-}
-
-button {
-    cursor: pointer;
-    background-color: inherit;
-}*/
