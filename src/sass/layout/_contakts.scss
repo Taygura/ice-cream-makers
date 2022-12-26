@@ -168,6 +168,7 @@
 }
 
 .address__link {
+  display: block;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
@@ -175,6 +176,12 @@
   font-style: normal;
 
   color: #d6936d;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    cursor: url(../images/product/pointer.png), pointer;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -250,6 +257,12 @@
 
   display: block;
   margin-bottom: 6px;
+  cursor: url(../images/product/pointer.png), pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 4px;
@@ -270,6 +283,13 @@
   line-height: 19/12;
 
   color: #131313;
+
+  cursor: url(../images/product/pointer.png), pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
