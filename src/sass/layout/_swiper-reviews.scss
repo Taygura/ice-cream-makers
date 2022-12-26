@@ -97,10 +97,12 @@
     }
     // Pagination
     .reviews-slider .swiper-pagination {
-      botom: 0;
+        margin: 0 auto;
+      bottom: 0;
     }
     // Bullets
     .reviews-slider .swiper-pagination-bullet {
+     
       width: 20px;
       height: 20px;
       line-height: 20px;
