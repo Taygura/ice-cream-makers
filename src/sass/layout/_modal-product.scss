@@ -38,7 +38,7 @@
     border-radius: 10px;
     border: 2px solid #F8D24E;
 
-    @media screen and (max-width: 379px) {
+    @media screen and (max-width: 479px) {
         width: 100%;
     }
 
@@ -242,7 +242,11 @@
 }
 
 .form-ingredients__input {
-    
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
     width: 100%;
     height: 42px;
     padding-left: 11px;
@@ -265,10 +269,6 @@
         width: 368px;
     }
 
-}
-
-.form-ingredients__input {
-    fill: currentColor;
 }
 
 .modal-textarea {
