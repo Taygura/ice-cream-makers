@@ -1,6 +1,6 @@
 .footer {
     padding-top: 935px;
-    background: #84A178;
+    background: $bg-color;
 
     @media screen and (min-width: 768px) {
         padding-top: 278px;
@@ -20,7 +20,7 @@
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    color: #131313;
+    color: $second-color-text;
 
     @media screen and (max-width: 767px) {
         max-width: 200px;
@@ -59,14 +59,14 @@
 
     transition-property: fill;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $timings;
 }
 
 .footer-locations__button:focus .icon-arrow-right,
 .footer-franchise__button:focus .icon-arrow-right {
 
     @media screen and (min-width: 1200px) {
-        fill: #FCFCFC;
+        fill: $main-color-text;
     }
     
 
@@ -88,7 +88,7 @@
     display: inline-block;
     margin-top: 60px;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: $main-color-text;
 
     @media screen and (min-width: 768px) {
         margin-top: 40px;
@@ -205,11 +205,11 @@
 
     transition-property: fill;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $timings;
 
     &:hover,
     &:focus {
-        fill: #FCFCFC;
+        fill: $main-color-text;
     }
 }
 
@@ -225,11 +225,11 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 186%;
-    color: #FCFCFC;
+    color: $main-color-text;
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $timings;
 
     &:hover {
         color: #F8D24E;
@@ -258,7 +258,7 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 186%;
-    color: #131313;
+    color: $second-color-text;
 
     @media screen and (min-width: 768px) {
         height: 27px;
