@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceCreamMakers</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Seymour+One:regular&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+</head>
+<!-- header -->
+
+<body>
+    <div class="wrapper">
+        <main>
+            <!-- partials -->
+            <!-- <include src="./partials/example.html"></include> -->
+        </main>
+        <!-- footer -->
+    </div>
+    <button class="button" type="button" data-modal-open></button>
+    <div class="modal-backdrop" data-modal>
+        <div class="modal-ingredients">
+            <button type="submit" class="close-modal" data-modal-close>
+                <svg class="modal-ingredients__close" width="20" height="20">
+                    <use href="./src/images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="modal-title__ingredient">Chololate icecream</p>
+            <div class="ingredients">
+                <div class="ingredients-img">
+
+                </div>
+                <ul class="ingredients-box">
+                    <li class="ingredients-box__item ingredients-box__item--green">
+                        <div class="ingredients-box--figure">320</div>
+                        <div class="ingredients-box--text">kcal</div>
+                    </li>
+                    <li class="ingredients-box__item ingredients-box__item--green">
+                        <div class="ingredients-box--figure">4g</div>
+                        <div class="ingredients-box--text">Protein...</div>
+                    </li>
+                    <li class="ingredients-box__item ingredients-box__item--green">
+                        <div class="ingredients-box--figure">8,2g</div>
+                        <div class="ingredients-box--text">Fats</div>
+                    </li>
+                    <li class="ingredients-box__item ingredients-box__item--green">
+                        <div class="ingredients-box--figure">40,4g</div>
+                        <div class="ingredients-box--text">Carbs</div>
+                    </li>
+                </ul>
+                <div>
+                    <p class="title-ingredient">Ingredients</p>
+                    <ul class="ingredient__list">
+                        <li class="ingredient__item">
+                            <p>Milk</p>
+                            <p>100ml</p>
+                        </li>
+                        <li class="ingredient__item">
+                            <p>Belgian chocolate</p>
+                            <p>20g</p>
+                        </li>
+                        <li class="ingredient__item">
+                            <p>Cream</p>
+                            <p>150 ml</p>
+                        </li>
+                        <li class="ingredient__item">
+                            <p>Cocoa powder</p>
+                            <p>30g</p>
+                        </li>
+                        <li class="ingredient__item">
+                            <p>Sugar</p>
+                            <p>40g</p>
+                        </li>
+                        <li class="ingredient__item">
+                            <p>Vanilla sugar</p>
+                            <p>10g</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <form class="form-ingredients">
+                <div class="form-ingredients__line">
+                    <label for="user-name" class="form-ingredients__label">
+                        <input name="user-name" id="user-name" type="text" class="form-ingredients__input"
+                            placeholder="Name"></label>
+                    <label for="user-tel" class="form-ingredients__label">
+                        <input name="user-tel" id="user-tel" type="tel" class="form-ingredients__input"
+                            placeholder="Phone"></label>
+                    <lable><textarea name="user-text" id="user-text" placeholder="Comment"
+                            class="modal-textarea"></textarea></lable>
+                </div>
+                <button type="submit" class="header__button--ingredient button">Submit</button>
+            </form>
+        </div>
+        <script src="../src/js/mobile-menu.js"></script>
+        <script src="../src/js/modal.js"></script>
+</body>
+
+</html>
