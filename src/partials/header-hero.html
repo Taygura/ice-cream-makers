@@ -40,14 +40,16 @@
 <section class="hero">
   <div class="container">
     <div class="hero__blok"><div class="hero__title">
-            <h1 class="hero__paregrahp">ice cream made with passion</h1>
+            <h1 class="hero__paregrahp">ice cream made with <cpann class="passion">passion</cpann></h1>
             <div class="hero__button">
               <a  href="" class="hero__button-product button">Products</a>
               <a  href="" class="hero__button-products button button--transparent">How it’s made?</a>
             </div>
     </div>
     <div class="hero__icecream">
-      <picture class="Hero__plate-ice">
+      <picture class="hero__plate-ice">
+              <source srcset="../src/images/header-hero/plate-ice_b@1x.png 1x, ../src/images/header-hero/plate-ice_b@2x.png 2x" media="(min-width: 1200px)" />
+              <source srcset="../src/images/header-hero/plate-ice-tablet_@1x.png 1x, ../src/images/header-hero/plate-ice-tablet_@2x.png 2x" media="(min-width: 768px)" />
                       <img
                         src="../src/images/header-hero/plate-ice_b@1x.png"
                         alt="a plate with ice cream"
@@ -59,23 +61,26 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et
                     </h3>
-                    <svg width="40" height="16">
+                    <svg class="hero__big-text-icon" width="40" height="16">
                     <use href="../src/images/icons.svg#icon-Arrow"></use>
                     </svg>
                 </div>
             </div>
         </div>
             <picture class="hero__big-icecream">
+              <source srcset="../src/images/header-hero/desktop_big-ice1x.png 1x, ../src/images/header-hero/desktop_big-ice2x.png 2x" media="(min-width: 1200px)" />
+              <source srcset="../src/images/header-hero/tablet_t-ice@1x.png 1x, ../src/images/header-hero/tablet_t-ice@2x.png 2x" media="(min-width: 768px)" />
+              <source srcset="../src/images/header-hero/mobile_s-ice@1x.png 1x, ../src/images/header-hero/mobile_s-ice@2x.png 2x" media="(min-width: 480px)" />
               <img
-                    src="../src/images/header-hero/desktop_big-ice1x.png"
+                    src="../src/images/header-hero/mobile_s-ice@1x.png"
                     alt="big-icecream"
                     loading="lazy"
                     />
                 </picture>
                 <div class="hero__icons">
-                                    <svg width="52" height="56">
+                                    <svg class="hero__icon-item">
                     <use href="../src/images/icons.svg#icon-16"></use></svg><span class="hero__icon-text">cafes</span> 
-                <svg width="59" height="56">
+                <svg class="hero__icon-items">
                      <use href="../src/images/icons.svg#icon-23"></use></svg><span class="hero__icon-text">food trucks</span>
                 </div>
           </div>
