@@ -15,6 +15,21 @@
   }
 }
 
+.gallery-wrapper {
+  margin-top: -32px;
+  margin-bottom: 80px;
+  @media screen and (min-width: 768px) {
+    margin-top: -144px;
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: -98px;
+    margin-bottom: 140px;
+  } 
+  }
+
+  
+
   // &__backdrop {
   //   position: absolute;
   //   left: 0;
