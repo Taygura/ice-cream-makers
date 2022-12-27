@@ -1,7 +1,67 @@
+// gallery
+.gallery-slider {
+  position: relative;
+  padding-top: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+  }
+
+  .gallery__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+  // &__backdrop {
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: -100px;
+  //   width: 110vw;
+  //   height: 150%;
+  //   z-index: -10;
+  //   top: 100px;
+  //   background-position: center;
+
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   margin: 0;
+  //   object-fit: cover;
+  //   @media screen and (min-width: 768px) {
+  //     width: 110vw;
+  //     height: 135%;
+  //   }
+  //   @media screen and (min-width: 1200px) {
+  //     width: 110vw;
+  //     height: 111%;
+  //   }
+  // }
+
+
+.gallery {
+  padding: 0;
+  margin-bottom: 80px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 55px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 130px;
+  }
+  .gallery__img {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// reviews
 .reviews {
-    // max-width: 480px;
+  
     margin: 0 auto;
-    padding: 0 20px 40px;
+    padding: 0 20px 393px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,8 +72,8 @@
       background-image: url(/src/images/product/Bg_640M@2x.png);
     }
     @media screen and (min-width: 768px) {
-      // max-width: 768px;
-      padding: 0 31px 80px 32px;
+      
+      padding: 0 31px 379px 32px;
       background-image: url(/src/images/product/Bg_768@1x.png);
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -23,8 +83,8 @@
     }
   
     @media screen and (min-width: 1200px) {
-      // max-width: 1200px;
-      padding: 0 16 100px;
+      
+      padding: 0 94px 228px 93px;
       background-image: url(/src/images/product/Bg_1200@1x.png);
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -103,9 +163,9 @@
     // Bullets
     .reviews-slider .swiper-pagination-bullet {
      
-      width: 20px;
-      height: 20px;
-      line-height: 20px;
+      width: 10px;
+      height: 10px;
+      line-height: 10px;
       font-size: 14px;
       background-color: $bgGreenColor;
     }
