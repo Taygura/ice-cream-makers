@@ -19,7 +19,7 @@ new Swiper(".gallery-slider", {
   
     mousewheel: {
       sensitivity: 1,
-      eventsTarget: ".reviews-slider",
+      eventsTarget: ".gallery-slider",
     },
   
     loop: true,
