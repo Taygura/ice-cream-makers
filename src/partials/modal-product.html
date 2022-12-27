@@ -1,4 +1,3 @@
-<!--кнопка модального вікна із секції product-->
 <!--Modal-cream-->
 <div class="modal-backdrop " data-modal__product-cream>
     <div class="modal-ingredients">
@@ -59,19 +58,19 @@
                 </ul>
             </div>
         </div>
-            <form class="form-ingredients">
-                <div class="form-ingredients__line">
-                    <label class="form-ingredients__label">
-                        <input type="text" name="user-name" placeholder="Name" class="form-ingredients__input"></label>
-                    <label class="form-ingredients__label">
-                        <input type="tel" name="user-tel" placeholder="Phone" class="form-ingredients__input"></label>
-                    <lable class="form-ingredients__label">
-                        <textarea name="user-text" placeholder="Comment" class="modal-textarea"></textarea>
-                    </lable>
-                </div>
-                <button type="submit" class="header__button--ingredient button">Submit</button>
-            </form>
+        <form class="form-ingredients">
+            <div class="form-ingredients__line">
+                <label for="user-name" class="form-ingredients__label">
+                    <input type="text" name="user-name" id="user-name" placeholder="Name" class="form-ingredients__input"></label>
+                <label for="user-tel" class="form-ingredients__label">
+                    <input type="tel" name="user-tel" id="user-tel" placeholder="Phone" class="form-ingredients__input"></label>
+                <lable for="user-text" class="form-ingredients__label">
+                    <textarea name="user-text" id="user-text" placeholder="Comment" class="modal-textarea"></textarea>
+                </lable>
             </div>
-        <script src="../src/js/modal-product.js"></script>
-        <script src="../src/js/mobile-menu.js"></script>
-        <script src="../src/js/modal.js"></script>
+            <button type="submit" class="header__button--ingredient button">Submit</button>
+        </form>
+    </div>
+    <script src="../src/js/modal-product.js"></script>
+    <script src="../src/js/mobile-menu.js"></script>
+    <script src="../src/js/modal.js"></script>
