@@ -4,32 +4,31 @@
   margin-left: auto;
   margin-right: auto;
   @media screen and(min-width:320px) and (max-width: 767px) {
-
     display: flex;
     margin: auto;
   }
   @media screen and(min-width:768px) and (max-width: 1199px) {
-  
     display: flex;
     margin: 0 auto;
   }
-}
-.container {
-  max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and(min-width:320px) and (max-width: 767px) {
-    width: 480px;
+
+  .container {
+    max-width: 1200px;
     display: flex;
-    margin: 0 auto;
-  }
-  @media screen and(min-width:768px) and (max-width: 1199px) {
-    width: 768px;
-    display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and(min-width:320px) and (max-width: 767px) {
+      width: 480px;
+      display: flex;
+      margin: 0 auto;
+    }
+    @media screen and(min-width:768px) and (max-width: 1199px) {
+      width: 768px;
+      display: flex;
+      margin: 0 auto;
+    }
   }
 }
 .header__list {
@@ -110,8 +109,8 @@
       display: flex;
       margin: 0 auto;
       padding: 0;
-        padding-right: 20px;
-  padding-left: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
       flex-direction: column;
       align-items: center;
       background-image: url(../../src/images/header-hero/s-point@1x.png);
@@ -119,11 +118,11 @@
     @media screen and(min-width:768px) and (max-width: 1199px) {
       width: 768px;
       display: flex;
-          align-items: flex-start;
+      align-items: flex-start;
       margin: 0 auto;
       padding: 0;
-          padding-right: 32px;
-    padding-left: 32px;
+      padding-right: 32px;
+      padding-left: 32px;
       background-image: url(../../src/images/header-hero/t-point_@1x.png);
     }
     .hero__button {
@@ -131,18 +130,18 @@
       align-items: center;
       gap: 12px;
       margin-bottom: 42px;
-                  @media screen and(min-width:768px) and (max-width: 1199px) {
-              margin: 0;
-              margin-bottom: 12px;
+      @media screen and(min-width:768px) and (max-width: 1199px) {
+        margin: 0;
+        margin-bottom: 12px;
       }
     }
     .hero__icecream {
       display: flex;
       align-items: center;
       margin-left: 40px;
-            @media screen and(min-width:768px) and (max-width: 1199px) {
-              margin: 0;
-              margin-bottom: 12px;
+      @media screen and(min-width:768px) and (max-width: 1199px) {
+        margin: 0;
+        margin-bottom: 12px;
       }
       @media screen and(max-width:767px) {
         display: none;
@@ -152,7 +151,7 @@
       width: 200px;
       height: 120px;
     }
-    .hero__plate-ice{
+    .hero__plate-ice {
       margin-right: 30px;
     }
     .hero__big-text {
@@ -169,10 +168,9 @@
         font-size: 12px;
         width: 139px;
       }
-      .hero__big-text-icon{
-          fill: currentColor;
+      .hero__big-text-icon {
+        fill: currentColor;
       }
-      
     }
   }
   .hero__paregrahp {
@@ -193,39 +191,39 @@
     }
     @media screen and(min-width:768px) and (max-width: 1199px) {
       margin-bottom: 24px;
-          font-size: 26px;
-    line-height: 33px;
-    width: 247px;
+      font-size: 26px;
+      line-height: 33px;
+      width: 247px;
     }
-    .passion{
-          @media screen and(max-width:767px) {
-      font-size: 34px;
-    }
-        @media screen and(min-width:768px) and (max-width: 1199px) {
-          font-size: 34px;
-    }
+    .passion {
+      @media screen and(max-width:767px) {
+        font-size: 34px;
+      }
+      @media screen and(min-width:768px) and (max-width: 1199px) {
+        font-size: 34px;
+      }
     }
   }
-  .hero__button{
+  .hero__button {
     @media screen and(min-width:768px) and (max-width: 1199px) {
       margin-bottom: 12px;
     }
   }
-  .hero__button-product{
-  padding: 12px 32px;
-        @media screen and(min-width:768px) and (max-width: 1199px) {
-    padding: 11px 26px;
+  .hero__button-product {
+    padding: 12px 32px;
+    @media screen and(min-width:768px) and (max-width: 1199px) {
+      padding: 11px 26px;
     }
   }
   .hero__big-icecream {
     margin-left: 170px;
     margin-bottom: -5px;
-        @media screen and (max-width:479px) {
+    @media screen and (max-width: 479px) {
       margin: 0 auto;
     }
-    @media screen and (min-width:480px) and (max-width:767px) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
       margin: 0 auto;
-          margin-left: 135px;
+      margin-left: 135px;
     }
     @media screen and(min-width:768px) and (max-width: 1199px) {
       margin: 0;
@@ -249,26 +247,26 @@
     line-height: 17px;
     text-align: right;
     color: #fcfcfc;
-          @media screen and(min-width:768px) and (max-width: 1199px) {
-          font-size: 8px;
-    line-height: 10px;
-    width: 46px;
+    @media screen and(min-width:768px) and (max-width: 1199px) {
+      font-size: 8px;
+      line-height: 10px;
+      width: 46px;
     }
   }
 }
-.hero__icon-item{
+.hero__icon-item {
   width: 52px;
   height: 56px;
-      @media screen and(min-width:768px) and (max-width: 1199px) {
-      width: 32px;
-      height: 34px;
-    }
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    width: 32px;
+    height: 34px;
+  }
 }
-.hero__icon-items{
+.hero__icon-items {
   width: 59px;
   height: 56px;
   @media screen and(min-width:768px) and (max-width: 1199px) {
-      width: 36px;
-      height: 34px;
-    }
+    width: 36px;
+    height: 34px;
+  }
 }
