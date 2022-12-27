@@ -1,9 +1,9 @@
 // Modal-cream
 (() => {
     const refs = {
-      openModalBtn: document.querySelector("[data-modal__open--product-cream ]"),
+      openModalBtn: document.querySelector("[data-modal__open--product-cream]"),
       closeModalBtn: document.querySelector("[data-modal__close--product-cream]"),
-      modal: document.querySelector("[data-modal__ product-cream]"),
+      modal: document.querySelector("[data-modal__product-cream]"),
     };
   
     refs.openModalBtn.addEventListener("click", toggleModal);
@@ -19,7 +19,7 @@
     const refs = {
       openModalBtn: document.querySelector("[data-modal__open--product-coffee]"),
       closeModalBtn: document.querySelector("[data-modal__close--product-coffee]"),
-      modal: document.querySelector("[data-modal__ product-coffee]"),
+      modal: document.querySelector("[data-modal__product-coffee]"),
     };
   
     refs.openModalBtn.addEventListener("click", toggleModal);
