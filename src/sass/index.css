@@ -147,20 +147,17 @@ button {
 
 .header {
   background: #84a278;
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
-    width: 480px;
     display: flex;
     margin: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
-    width: 768px;
     display: flex;
     margin: 0 auto;
   }
@@ -219,22 +216,44 @@ button {
   gap: 32px;
 }
 
+.header__butoon-buy {
+  width: 152px;
+  height: 42px;
+}
+@media screen and (max-width: 767px) {
+  .header__butoon-buy {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+@media screen and (min-width: 1199px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle .mobile-menu-icon {
+  fill: currentColor;
+}
+
 .hero {
-  width: 1200px;
   background: #84a278;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero {
-    width: 480px;
     display: flex;
     margin: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    width: 768px;
     display: flex;
     margin: 0 auto;
   }
@@ -247,11 +266,9 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  background-image: url(../images/hedear/Крапки_b@1x.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  position: relative;
+  background-image: url(../../src/images/header-hero/b-point@1x.png);
   background-position: bottom;
   background-repeat: no-repeat;
   position: relative;
@@ -260,62 +277,83 @@ button {
   .hero .container {
     width: 480px;
     display: flex;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0;
+    padding-right: 20px;
+    padding-left: 20px;
     flex-direction: column;
-    background-image: url(../images/hedear/t-..._@1x.png);
-  }
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .container {
-    background-image: url(../images/hedear/t-..._@2x.png);
+    align-items: center;
+    background-image: url(../../src/images/header-hero/s-point@1x.png);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero {
+  .hero .container {
     width: 768px;
     display: flex;
+    align-items: flex-start;
     margin: 0 auto;
+    padding: 0;
+    padding-right: 32px;
+    padding-left: 32px;
+    background-image: url(../../src/images/header-hero/t-point_@1x.png);
   }
 }
-.hero .hero__button {
+.hero .container .hero__button {
   display: flex;
-  gap: 12px;
-}
-.hero .hero__icecream {
-  display: flex;
-  margin-top: 90px;
   align-items: center;
+  gap: 12px;
+  margin-bottom: 42px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero .container .hero__button {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+}
+.hero .container .hero__icecream {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero .container .hero__icecream {
+    margin: 0;
+    margin-bottom: 12px;
+  }
 }
 @media screen and (max-width: 767px) {
-  .hero .hero__icecream {
+  .hero .container .hero__icecream {
     display: none;
   }
 }
-.hero .hero__text-arrow {
+.hero .container .hero__text-arrow {
   width: 200px;
   height: 120px;
 }
-.hero .hero__big-text {
+.hero .container .hero__plate-ice {
+  margin-right: 30px;
+}
+.hero .container .hero__big-text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
+  width: 200px;
   color: #fcfcfc;
+  margin-top: 5px;
+  margin-bottom: 24px;
 }
-
-.hero__plate-ice {
-  -webkit-animation-name: spin;
-          animation-name: spin;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero .container .hero__big-text {
+    font-size: 12px;
+    width: 139px;
+  }
 }
-
-.hero__paregrahp {
+.hero .container .hero__big-text .hero__big-text-icon {
+  fill: currentColor;
+}
+.hero .hero__paregrahp {
   width: 363px;
   font-family: "Seymour One";
   font-style: normal;
@@ -325,46 +363,79 @@ button {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fcfcfc;
+  margin-bottom: 28px;
 }
 @media screen and (max-width: 767px) {
-  .hero__paregrahp {
+  .hero .hero__paregrahp {
     width: 247px;
     font-size: 26px;
     line-height: 33px;
   }
 }
-
-.hero__big-icecream {
-  margin-left: 220px;
-  margin-bottom: -5px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero .hero__paregrahp {
+    margin-bottom: 24px;
+    font-size: 26px;
+    line-height: 33px;
+    width: 247px;
+  }
 }
 @media screen and (max-width: 767px) {
-  .hero__big-icecream {
-    margin: 0;
-    margin-bottom: -5px;
-    margin-left: 83px;
-    margin-right: 60px;
+  .hero .hero__paregrahp .passion {
+    font-size: 34px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero__big-icecream {
-    margin: 0;
+  .hero .hero__paregrahp .passion {
+    font-size: 34px;
   }
 }
-
-.hero__icons {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero .hero__button {
+    margin-bottom: 12px;
+  }
+}
+.hero .hero__button-product {
+  padding: 12px 32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero .hero__button-product {
+    padding: 11px 26px;
+  }
+}
+.hero .hero__big-icecream {
+  margin-left: 170px;
+  margin-bottom: -5px;
+}
+@media screen and (max-width: 479px) {
+  .hero .hero__big-icecream {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero .hero__big-icecream {
+    margin: 0 auto;
+    margin-left: 135px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero .hero__big-icecream {
+    margin: 0;
+    margin-top: 16px;
+  }
+}
+.hero .hero__icons {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-top: 8px;
 }
 @media screen and (max-width: 767px) {
-  .hero__icons {
+  .hero .hero__icons {
     display: none;
   }
 }
-
-.hero__icon-text {
+.hero .hero__icon-text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -372,6 +443,35 @@ button {
   line-height: 17px;
   text-align: right;
   color: #fcfcfc;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero .hero__icon-text {
+    font-size: 8px;
+    line-height: 10px;
+    width: 46px;
+  }
+}
+
+.hero__icon-item {
+  width: 52px;
+  height: 56px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__icon-item {
+    width: 32px;
+    height: 34px;
+  }
+}
+
+.hero__icon-items {
+  width: 59px;
+  height: 56px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__icon-items {
+    width: 36px;
+    height: 34px;
+  }
 }
 
 .products {
