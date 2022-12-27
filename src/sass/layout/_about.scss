@@ -1,4 +1,5 @@
 
+
 .about-section {
   background-color: $bgGreenColor;
   padding-top: 60px;
@@ -236,14 +237,12 @@
         letter-spacing: 0.06em;
     }
 
-    .about-main__text--first,
-    .about-main__text--second,
-    .about-main__text--hidden{
-        letter-spacing: 0.04em;
-        margin-bottom: 8px;
-        letter-spacing: 0.04em;
-        color: $main-color-text;
-   } 
-
-
+  .about-main__text--first,
+  .about-main__text--second,
+  .about-main__text--hidden {
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+    color: $main-color-text;
+  }
 }

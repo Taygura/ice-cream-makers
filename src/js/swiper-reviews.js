@@ -1,6 +1,6 @@
-new Swiper('.reviews-slider', {
+new Swiper(".reviews-slider", {
   paginaion: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },
@@ -19,7 +19,7 @@ new Swiper('.reviews-slider', {
 
   mousewheel: {
     sensitivity: 1,
-    eventsTarget: '.reviews-slider',
+    eventsTarget: ".reviews-slider",
   },
 
   loop: true,
@@ -33,7 +33,7 @@ new Swiper('.reviews-slider', {
 
   speed: 1000,
 
-  effect: 'fade',
+  effect: "fade",
   fadeEffect: {
     crossFade: true,
   },
