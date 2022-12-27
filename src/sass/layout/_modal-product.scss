@@ -29,19 +29,16 @@
 
 .modal-ingredients {
     position: absolute;
-    top: 50%;
+    width: 280px;
+    top: 75%;
     left: 50%;
-    padding: 28px 20px;
+    padding: 28px 32px;
     transform: translate(-50%, -50%) rotate(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #FCFCFC;
     border-radius: 10px;
     border: 2px solid #F8D24E;
-
-    @media screen and (max-width: 767px) {
-        width: 280px;
-    }
-
+    
     @media screen and (min-width: 768px) {
         padding: 32px 40px;
         width: 568px;
@@ -63,10 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 13px;
-    height: 13px;
     cursor: pointer;
-
     color: #131313;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -81,6 +75,7 @@
 }
 
 .modal-title__ingredient {
+
     font-family: 'Seymour One';
     font-weight: 400;
     font-size: 20px;
@@ -196,12 +191,6 @@
 
 //menu ingredient
 
-.form-ingredients {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .title-ingredient {
     font-family: 'Montserrat';
     font-weight: 500;
@@ -235,10 +224,29 @@
     color: #131313;
 }
 
+.form-ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.form-ingredients__line {
+    margin-bottom: 24px;
+    width: 100%; 
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+
+}
+
 .form-ingredients__label {
     display: flex;
-    margin-bottom: 16px;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
 }
 
 .form-ingredients__input {
@@ -263,6 +271,7 @@
     &:focus {
         outline: 0;
         border-color: #0a8817;
+
     }
 
     @media screen and (min-width: 768px) {
@@ -270,7 +279,6 @@
     }
 
 }
-
 .modal-textarea {
     font-family: 'Montserrat';
     font-weight: 400;
@@ -296,7 +304,6 @@
     &:focus {
         outline: 0;
         border-color: #0a8817;
-        ;
     }
 
     @media screen and (min-width: 768px) {
@@ -305,14 +312,6 @@
 
 }
 
-.form-ingredients__line {
-    margin-bottom: 24px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-    }
-
-}
 
 .header__button--ingredient {
     padding: 12px 34px;
