@@ -2,12 +2,9 @@
   <h2 class="visually-hidden">Reviews</h2>
   
 <div class="swiper-container container gallery-slider">
-  <ul
-  class="gallery"
-  data-npm="fade-up"
-  data-npm-anchor-placement="center-bottom"
->
-  <li class="gallery__item">
+  <div class="swiper-wrapper gallery-wrapper">
+  <ul class="gallery">
+  <li data-hash="slide-1" class="swiper-slide gallery__slide">
     <picture>
       <source
         srcset="
@@ -23,7 +20,7 @@
       />
     </picture>
   </li>
-  <li class="gallery__item">
+  <li data-hash="slide-2" class="swiper-slide gallery__slide">
     <picture>
       <source
         srcset="
@@ -39,7 +36,7 @@
       />
     </picture>
   </li>
-  <li class="gallery__item">
+  <li data-hash="slide-3" class="swiper-slide gallery__slide">
     <picture>
       <source
         srcset="
@@ -56,6 +53,7 @@
     </picture>
   </li>
 </ul>
+</div>
 </div>
 
   <div class="swiper-container container reviews-slider">
