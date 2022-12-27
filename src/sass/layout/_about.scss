@@ -1,6 +1,7 @@
 .about-section{
     background-color:  $bgGreenColor;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .about__label{
@@ -55,9 +56,6 @@
 
 /*Mobile*/
 @media screen and (max-width:767px) {
-    .about-section{
-        padding-bottom: 64px;
-    }
 
     .about__label{
         font-weight: 700;
@@ -120,10 +118,7 @@
 }
 
 /*Tablet*/
-@media screen and (min-width:768px) and (max-width:1199.99px) {
-    .about-section{
-        padding-bottom: 204px;
-    }
+@media screen and (min-width:768px) and (max-width:1199px) {
 
     .about__label{
         font-size: 22px;
@@ -160,10 +155,7 @@
 }
 
 /*Desktop*/
-@media screen and (min-width:1200px) and (max-width:1600px) {
-    .about-section{
-        padding-bottom: 178px;
-    }
+@media screen and (min-width:1200px) {
 
     .about__label{
         font-size: 30px;
@@ -202,7 +194,7 @@
 }
 
 /*Tablet and desktop*/
-@media screen and (min-width:768px) and (max-width:1600px) {
+@media screen and (min-width:768px) {
     .about__label{
         font-weight: 800;
         letter-spacing: 0.04em;
