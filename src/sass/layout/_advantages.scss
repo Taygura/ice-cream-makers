@@ -20,6 +20,7 @@
 /*-----Стилі списка Advantages-----*/
 
 .advantages__list {
+  margin-top: 0;
   @media screen and (max-width: calc($tablet - 1px)) {
     padding-left: 29px;
     padding-right: 29px;
