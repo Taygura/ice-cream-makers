@@ -1,4 +1,3 @@
-// Modal-cream
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal__open--product-cream]'),

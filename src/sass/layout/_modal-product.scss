@@ -1,8 +1,8 @@
-/*.modal-backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}*/
+.modal-backdrop.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
 
 .modal-backdrop {
   position: fixed;
@@ -31,18 +31,15 @@
 
 .modal-ingredients {
   position: absolute;
-  top: 50%;
+  width: 280px;
+  top: 75%;
   left: 50%;
-  padding: 28px 20px;
+  padding: 28px 32px;
   transform: translate(-50%, -50%) rotate(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #fcfcfc;
   border-radius: 10px;
   border: 2px solid #f8d24e;
-
-  @media screen and (max-width: 767px) {
-    width: 280px;
-  }
 
   @media screen and (min-width: 768px) {
     padding: 32px 40px;
@@ -64,10 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 13px;
-  height: 13px;
   cursor: pointer;
-
   color: #131313;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -197,12 +191,6 @@
 
 //menu ingredient
 
-.form-ingredients {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .title-ingredient {
   font-family: 'Montserrat';
   font-weight: 500;
@@ -236,10 +224,27 @@
   color: #131313;
 }
 
+.form-ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-ingredients__line {
+  margin-bottom: 24px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
 .form-ingredients__label {
   display: flex;
-  margin-bottom: 16px;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .form-ingredients__input {
@@ -270,7 +275,6 @@
     width: 368px;
   }
 }
-
 .modal-textarea {
   font-family: 'Montserrat';
   font-weight: 400;
@@ -303,25 +307,7 @@
   }
 }
 
-.form-ingredients__line {
-  margin-bottom: 24px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
-  }
-}
-
 .header__button--ingredient {
   padding: 12px 34px;
   background: #f8d24e;
 }
-
-/*Modal-coffee
-.ingredients-box__item--cream {
-    border: 2px solid #EFD478;
-}*/
-
-/*Modal-milk
-.ingredients-box__item--milk {
-border: 2px solid #D6936D;
-}*/
