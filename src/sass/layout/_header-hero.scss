@@ -1,8 +1,9 @@
 .header {
   background: #84a278;
+  margin: 0 auto;
+  // margin-left: auto;
+  // margin-right: auto;
 
-  margin-left: auto;
-  margin-right: auto;
   @media screen and(min-width:320px) and (max-width: 767px) {
     display: flex;
     margin: auto;
@@ -12,8 +13,10 @@
     margin: 0 auto;
   }
 }
+
 .header-container {
   // max-width: 1200px;
+  padding-top: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +60,7 @@
   display: flex;
   gap: 32px;
 }
-.header__butoon-buy {
+.header__button-buy {
   width: 152px;
   height: 42px;
   @media screen and(max-width:767px) {
@@ -91,7 +94,7 @@
     margin: 0 auto;
   }
   .container {
-    max-width: 1200px;
+    // max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 45px;
@@ -230,43 +233,81 @@
       margin-top: 16px;
     }
   }
-  .hero__icons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 8px;
-    @media screen and(max-width:767px) {
-      display: none;
+
+  // .hero__icons {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-end;
+  //   margin-top: 8px;
+  //   @media screen and(max-width:767px) {
+  //     display: none;
+  //   }
+  // }
+  // .hero__icon-text {
+  //   font-family: 'Montserrat';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 14px;
+  //   line-height: 17px;
+  //   text-align: right;
+  //   color: #fcfcfc;
+  //   @media screen and(min-width:768px) and (max-width: 1199px) {
+  //     font-size: 8px;
+  //     line-height: 10px;
+  //     width: 46px;
+  //   }
+  // }
+}
+// .hero__icon-item {
+//   width: 52px;
+//   height: 56px;
+//   @media screen and(min-width:768px) and (max-width: 1199px) {
+//     width: 32px;
+//     height: 34px;
+//   }
+// }
+// .hero__icon-items {
+//   width: 59px;
+//   height: 56px;
+//   @media screen and(min-width:768px) and (max-width: 1199px) {
+//     width: 36px;
+//     height: 34px;
+//   }
+// }
+.hero__label {
+  display: none;
+  position: absolute;
+  top: 53px;
+  // right: 16px;
+  // align-items: flex-end;
+  text-align: right;
+  // z-index: 1;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+  &-hero__label-item {
+    gap: 16px;
+  }
+  &-counter {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: calc(56 / 46);
+    letter-spacing: 0.04em;
+    color: #131313;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 46px;
     }
   }
-  .hero__icon-text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: right;
-    color: #fcfcfc;
-    @media screen and(min-width:768px) and (max-width: 1199px) {
-      font-size: 8px;
-      line-height: 10px;
-      width: 46px;
+  &-text {
+    font-size: 8px;
+    line-height: calc(17 / 14);
+    letter-spacing: 0em;
+    color: #131313;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
     }
-  }
-}
-.hero__icon-item {
-  width: 52px;
-  height: 56px;
-  @media screen and(min-width:768px) and (max-width: 1199px) {
-    width: 32px;
-    height: 34px;
-  }
-}
-.hero__icon-items {
-  width: 59px;
-  height: 56px;
-  @media screen and(min-width:768px) and (max-width: 1199px) {
-    width: 36px;
-    height: 34px;
   }
 }
