@@ -101,7 +101,7 @@
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
-    align-items: flex-start;
+    // align-items: flex-start;
     justify-content: space-between;
     background-image: url(../../src/images/header-hero/b-point@1x.png);
     background-position: bottom;
@@ -279,7 +279,7 @@
   position: absolute;
   top: 53px;
   // right: 16px;
-  // align-items: flex-end;
+  align-items: flex-end;
   text-align: right;
   // z-index: 1;
 
