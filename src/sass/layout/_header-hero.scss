@@ -130,7 +130,7 @@
     }
     .hero__block {
       @media screen and(min-width:768px) {
-        padding-top: 14px;
+        margin-top: 14px;
       }
       @media screen and(min-width:1200px) {
         padding-top: 45px;
@@ -152,9 +152,10 @@
     .hero__icecream {
       display: flex;
       align-items: center;
-      // margin-left: 40px;
+      gap: 16px;
       @media screen and(min-width:768px) and (max-width: 1199px) {
         margin: 0;
+        gap: 32px;
       }
       @media screen and(max-width:767px) {
         display: none;
@@ -176,13 +177,13 @@
       width: 200px;
       color: #fcfcfc;
       margin-top: 5px;
-      margin-bottom: 24px;
+      margin-bottom: 12px;
+      &-icon {
+        fill: currentColor;
+      }
       @media screen and(min-width:768px) and (max-width: 1199px) {
         font-size: 12px;
         width: 139px;
-      }
-      .hero__big-text-icon {
-        fill: currentColor;
       }
     }
   }
@@ -233,19 +234,18 @@
     }
   }
   .hero__big-icecream {
-    padding-left: 170px;
-    padding-right: 92px;
+    // margin: 0 auto;
     // margin-bottom: -5px;
     @media screen and (max-width: 479px) {
       margin: 0 auto;
     }
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      margin: 0 auto;
-      margin-left: 135px;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      padding-right: 92px;
+      // margin-left: 135px;
     }
-    @media screen and(min-width:768px) and (max-width: 1199px) {
-      margin: 0;
-      // margin-top: 16px;
+    @media screen and (min-width: 1200px) {
+      padding-left: 170px;
+      padding-right: 92px;
     }
   }
 
