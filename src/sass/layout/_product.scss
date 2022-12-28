@@ -7,11 +7,10 @@
 }
 
 .products__label {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
   text-transform: uppercase;
   color: #131313;
   text-align: center;
@@ -21,20 +20,19 @@
   display: block;
   @media screen and (min-width: 768px) {
     font-size: 22px;
-    line-height: 27px;
+    line-height: 1.23;
   }
   @media screen and (min-width: 1200px) {
     font-size: 30px;
-    line-height: 37px;
+    line-height: 1.23;
   }
 }
 
 .products__title {
   font-family: 'Seymour One';
   font-style: normal;
-  font-weight: 400;
   font-size: 30px;
-  line-height: 38px;
+  line-height: 1.27;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
@@ -45,12 +43,12 @@
 
   @media screen and (min-width: 768px) {
     font-size: 34px;
-    line-height: 43px;
+    line-height: 1.26;
     margin-bottom: 200px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 36px;
-    line-height: 45px;
+    line-height: 1.25;
     letter-spacing: 0.06em;
     margin-bottom: 303px;
   }
@@ -63,7 +61,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    max-width: 716px;
+    max-width: 768px;
     margin-left: calc(-1 * 16px);
     margin-right: auto;
     margin-left: auto;
@@ -87,6 +85,7 @@
   margin-left: auto;
   background: #aec6a5;
   border-radius: 24px;
+  padding-bottom: 16px;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 16px);
@@ -97,344 +96,15 @@
     margin-bottom: 0;
     box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
     border-radius: 16px;
-  }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 3 - 29px);
-    margin-left: 29px;
-    margin-right: 0;
-    max-width: 370px;
-    border-radius: 24px;
-  }
-
-  &:before {
-    content: '';
-    width: 240px;
-    height: 240px;
-    background-image: url(/src/images/product/ice_200M@1x.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    position: absolute;
-    top: -110px;
-    left: 20px;
-    @media screen and (min-width: 768px) {
-      background-image: url(/src/images/product/ice_200T@1x.png);
-      top: -122px;
-      left: -8px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 362px;
-      height: 362px;
-      background-image: url(/src/images/product/ice_302D@1x.png);
-      top: -188px;
-      left: 4px;
-    }
-  }
-}
-.products__item .products__text {
-  @media screen and (min-width: 1200px) {
-    width: 246px;
-    margin-left: 61px;
-    margin-right: 63px;
-  }
-}
-.products__item--second {
-  background: #efd478;
-  border-radius: 24px;
-  &:before {
-    content: '';
-    width: 240px;
-    height: 240px;
-    background-image: url(/src/images/product/coffee_200M@1x-2.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    position: absolute;
-    top: -110px;
-    left: 20px;
-    @media screen and (min-width: 768px) {
-      background-image: url(/src/images/product/coffee_200T@1x-2.png);
-      top: -122px;
-      left: -8px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 362px;
-      height: 362px;
-      background-image: url(/src/images/product/coffee_302D@1x.png);
-      top: -188px;
-      left: 4px;
-    }
-  }
-}
-.products__item--second .products__text {
-  margin-bottom: 53px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 75px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
-  }
-}
-.products__item--third {
-  background: #d6936d;
-  border-radius: 24px;
-  margin-bottom: 0;
-
-  &:before {
-    content: '';
-    width: 240px;
-    height: 240px;
-    background-image: url(/src/images/product/milkshakes_200M@1x-1.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    position: absolute;
-
-    @media screen and (min-width: 768px) {
-      background-image: url(/src/images/product/milkshakes_200T@1x-1.png);
-      top: -122px;
-      left: -8px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 362px;
-      height: 362px;
-      background-image: url(/src/images/product/milkshakes_302D@1x.png);
-      top: -188px;
-      left: 4px;
-    }
-  }
-}
-
-.products__item--third .products__text {
-  margin-bottom: 63px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 75px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
-  }
-}
-.products__subtitle {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #131313;
-  padding-top: 123px;
-  margin-bottom: 40px;
-
-  @media screen and (min-width: 768px) {
-    font-size: 22px;
-    line-height: 27px;
-    padding-top: 108px;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 30px;
-    line-height: 37px;
-    margin-bottom: 66px;
-    padding-top: 165px;
-  }
-}
-
-.products__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 176%;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #131313;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 101px;
-
-  @media screen and (min-width: 768px) {
-    margin-left: 26px;
-    margin-right: 26px;
-    height: 172px;
-    margin-bottom: 75px;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 16px;
-    margin-left: 64px;
-    margin-right: 64px;
-    height: 142px;
-    margin-bottom: 50px;
-  }
-}
-
-.products__button {
-  background: 0 0;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  justify-content: center;
-  align-items: center;
-  text-transform: none;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  //   box-sizing: border-box;
-  //   border: 2px solid #131313;
-  padding-bottom: 16px;
-
-  @media screen and (min-width: 768px) {
     padding-bottom: 12px;
   }
   @media screen and (min-width: 1200px) {
-    padding-bottom: 60px;
-  }
-}
-
-.products__icon {
-  width: 40;
-  height: 16;
-  overflow-clip-margin: content-box;
-  overflow: hidden;
-}
-// .products {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   text-align: center;
-//   margin-right: auto;
-//   margin-left: auto;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center;
-//   background-image: url(/src/images/product/Bg_320M@1x.png);
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url(/src/images/product/Bg_640M@2x.png);
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     background-image: url(/src/images/product/Bg_768@1x.png);
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url(/src/images/product/Bg_1536@2x.png);
-//     }
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     background-image: url(/src/images/product/Bg_1200@1x.png);
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url(/src/images/product/Bg_2400@2x.png);
-//     }
-//   }
-// }
-.products__label {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: uppercase;
-  color: #131313;
-  text-align: center;
-  margin-bottom: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  @media screen and (min-width: 768px) {
-    font-size: 22px;
-    line-height: 27px;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 30px;
-    line-height: 37px;
-  }
-}
-
-.products__title {
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 38px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #131313;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 148px;
-
-  @media screen and (min-width: 768px) {
-    font-size: 34px;
-    line-height: 43px;
-    margin-bottom: 200px;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 36px;
-    line-height: 45px;
-    letter-spacing: 0.06em;
-    margin-bottom: 303px;
-  }
-}
-
-.products__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    max-width: 716px;
-    margin-left: calc(-1 * 16px);
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-    margin-left: calc(-1 * 29px);
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-.products__item {
-  position: relative;
-  width: 100%;
-  max-width: 280px;
-  margin-top: 20px;
-  margin-right: auto;
-  margin-bottom: 168px;
-  margin-left: auto;
-  background: #aec6a5;
-  border-radius: 24px;
-
-  @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 3 - 16px);
-    margin-left: 16px;
-    margin-right: 0;
-    max-width: 224px;
-    margin-top: 0;
-    margin-bottom: 0;
-    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-    border-radius: 15.7808px;
-  }
-  @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - 29px);
     margin-left: 29px;
     margin-right: 0;
     max-width: 370px;
     border-radius: 24px;
+    padding-bottom: 60px;
   }
 
   &:before {
@@ -449,6 +119,7 @@
     position: absolute;
     top: -110px;
     left: 20px;
+
     @media screen and (min-width: 768px) {
       background-image: url(/src/images/product/ice_200T@1x.png);
       top: -122px;
@@ -464,6 +135,7 @@
   }
 }
 .products__item .products__text {
+
   @media screen and (min-width: 1200px) {
     width: 246px;
     margin-left: 61px;
@@ -485,6 +157,7 @@
     position: absolute;
     top: -110px;
     left: 20px;
+
     @media screen and (min-width: 768px) {
       background-image: url(/src/images/product/coffee_200T@1x-2.png);
       top: -122px;
@@ -542,6 +215,7 @@
 
 .products__item--third .products__text {
   margin-bottom: 63px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 75px;
   }
@@ -550,11 +224,10 @@
   }
 }
 .products__subtitle {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -564,21 +237,19 @@
 
   @media screen and (min-width: 768px) {
     font-size: 22px;
-    line-height: 27px;
+    line-height: 1.23;
     padding-top: 108px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 30px;
-    line-height: 37px;
+    line-height: 1.23;
     margin-bottom: 66px;
     padding-top: 165px;
   }
 }
 
 .products__text {
-  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 176%;
   text-align: center;
@@ -615,22 +286,14 @@
   margin: 0 auto;
   padding: 0;
   display: flex;
-  padding-bottom: 16px;
+
   &:hover,
   &:focus {
-    fill: white;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 12px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 60px;
+    fill: #fcfcfc;
   }
 }
 
 .products__icon {
-  fill: currentColor;
   width: 40;
   height: 16;
 }
