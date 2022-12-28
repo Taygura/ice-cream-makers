@@ -95,14 +95,13 @@
   }
   .hero__container {
     // max-width: 1200px;
-    // margin-left: auto;
-    // margin-right: auto;
-    // padding-top: 45px;
-    // padding-left: 15px;
-    // padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     justify-content: flex-end;
-
     background-image: url(../../src/images/header-hero/b-point@1x.png);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -110,10 +109,10 @@
     @media screen and(min-width:320px) and (max-width: 767px) {
       width: 480px;
       display: flex;
-      // margin: 0 auto;
-      // padding: 0;
-      // padding-right: 20px;
-      // padding-left: 20px;
+      margin: 0 auto;
+      padding: 0;
+      padding-right: 20px;
+      padding-left: 20px;
       flex-direction: column;
       align-items: center;
       background-image: url(../../src/images/header-hero/s-point@1x.png);
@@ -128,24 +127,13 @@
       padding-left: 32px;
       background-image: url(../../src/images/header-hero/t-point_@1x.png);
     }
-    .hero__block {
-      @media screen and(min-width:768px) {
-        margin-top: 14px;
-      }
-      @media screen and(min-width:1200px) {
-        padding-top: 45px;
-      }
-    }
-
     .hero__button {
       display: flex;
       align-items: center;
       gap: 12px;
       margin-bottom: 42px;
-      @media screen and(min-width:768px) {
-        margin-bottom: 12px;
-      }
       @media screen and(min-width:768px) and (max-width: 1199px) {
+        margin: 0;
         margin-bottom: 12px;
       }
     }
@@ -158,10 +146,10 @@
     .hero__icecream {
       display: flex;
       align-items: center;
-      gap: 16px;
+      margin-left: 40px;
       @media screen and(min-width:768px) and (max-width: 1199px) {
         margin: 0;
-        gap: 32px;
+        margin-bottom: 12px;
       }
       @media screen and(max-width:767px) {
         display: none;
@@ -172,7 +160,7 @@
       height: 120px;
     }
     .hero__plate-ice {
-      margin: 0;
+      margin-right: 30px;
     }
     .hero__big-text {
       font-family: 'Montserrat';
@@ -183,13 +171,13 @@
       width: 200px;
       color: #fcfcfc;
       margin-top: 5px;
-      margin-bottom: 12px;
-      &-icon {
-        fill: currentColor;
-      }
+      margin-bottom: 24px;
       @media screen and(min-width:768px) and (max-width: 1199px) {
         font-size: 12px;
         width: 139px;
+      }
+      .hero__big-text-icon {
+        fill: currentColor;
       }
     }
   }
@@ -224,38 +212,31 @@
       }
     }
   }
-
-  .hero__button-product {
-    @media screen and(max-width:1199px) {
-      padding: 11px 26px;
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 1.25; /* 15/12 */
+  .hero__button {
+    @media screen and(min-width:768px) and (max-width: 1199px) {
+      margin-bottom: 12px;
     }
-    @media screen and (min-width: 1200px) {
-      padding: 12px 34px;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 1.28; /* 18/14 */
+  }
+  .hero__button-product {
+    padding: 12px 32px;
+    @media screen and(min-width:768px) and (max-width: 1199px) {
+      padding: 11px 26px;
     }
   }
   .hero__big-icecream {
-
     margin-left: 170px;
     margin-right: 94px;
-
     @media screen and (max-width: 479px) {
       margin: 0 auto;
     }
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
-      padding-right: 92px;
-      // margin-left: 135px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      margin: 0 auto;
+      margin-left: 135px;
     }
-
-    @media screen and (min-width: 1200px) {
-      padding-left: 170px;
-      padding-right: 92px;
-
+    @media screen and(min-width:768px) and (max-width: 1199px) {
+      margin: 0;
+      margin-top: 25px;
+      margin-right: 92px;
     }
   }
 
@@ -301,33 +282,28 @@
 // }
 .hero__label {
   display: none;
-
   position: absolute;
   top: 53px;
-  right: 0;
+  // right: 16px;
+  align-items: flex-end;
+  text-align: right;
+  // z-index: 1;
 
   @media screen and (min-width: $tablet) {
     display: block;
-    text-align: end;
-    right: 32px;
   }
-  @media screen and (min-width: $desktop) {
-    right: 16px;
-  }
-  &-item:not(:last-child) {
-    margin-bottom: 16px;
+  &-hero__label-item {
+    gap: 16px;
   }
   &-counter {
-    font-weight: 900;
     font-size: 28px;
-    line-height: 1.21; /* 34/28 */
+    font-weight: 900;
+    line-height: calc(56 / 46);
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     color: #131313;
 
     @media screen and (min-width: $desktop) {
       font-size: 46px;
-      line-height: 1.21; /* 56/46 */
     }
   }
   &-text {
