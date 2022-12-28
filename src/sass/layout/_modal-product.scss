@@ -232,22 +232,13 @@
     
 }
 
-.form-ingredients__line {
-    margin-bottom: 24px;
-    width: 100%; 
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-    }
-
-}
-
 .form-ingredients__label {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 16px;
+    width: 100%;
 }
 
 .form-ingredients__input {
