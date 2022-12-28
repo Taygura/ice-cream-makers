@@ -41,6 +41,7 @@
 .footer-franchise__button {
   padding: 10px 53px;
   border: 2px solid #f8d24e;
+  background-color: transparent;
 
   @media screen and (max-width: 767px) {
     margin-top: 16px;
@@ -284,7 +285,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1168px;
   }
 }
 
