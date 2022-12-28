@@ -38,7 +38,7 @@
   top: 12px;
   left: 32px;
 
-/*  @include medium-min {
+  /*  @include medium-min {
     top: 20px;
   }*/
 }
@@ -48,7 +48,7 @@
   flex-direction: column;
   gap: 32px;
 
-/*  @include medium-min {
+  /*  @include medium-min {
     gap: 40px;
   }*/
 }
@@ -67,14 +67,14 @@
     color: black;
   }
 
- /* @include medium-min {
+  /* @include medium-min {
     font-size: 48px;
   }*/
 }
 
 .menu-toggle {
   fill: var(--main-light);
-  position: absolute;
+  // position: absolute;
   top: 16px;
   right: 20px;
   transition: fill var(--main-animation);
@@ -88,7 +88,7 @@
     fill: var(--accent-color);
   }
 
- /* @include medium-min {
+  /* @include medium-min {
     top: 32px;
     right: 32px;
   }*/
@@ -100,7 +100,7 @@
   width: 152px;
   height: 42px;
 
- /* @include medium-min {
+  /* @include medium-min {
     display: none;
   }*/
 }
