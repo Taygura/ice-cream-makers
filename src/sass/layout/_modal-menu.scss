@@ -72,7 +72,7 @@
   }*/
 }
 
-.menu-toggle {
+.menu-togglen {
   fill: var(--main-light);
   position: absolute;
   top: 16px;
@@ -100,7 +100,7 @@
   width: 152px;
   height: 42px;
 
- /* @include medium-min {
+ @include mq(phone) {
     display: none;
-  }*/
+  }
 }
