@@ -1,0 +1,360 @@
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.products__label {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: #131313;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.23;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+}
+
+.products__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 148px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 1.26;
+    margin-bottom: 200px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+    margin-bottom: 303px;
+  }
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: 768px;
+    gap: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    gap: 29px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.products__item {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  margin-right: auto;
+  margin-bottom: 168px;
+  margin-left: auto;
+  background: #aec6a5;
+  border-radius: 24px;
+  padding-top: 123px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+    max-width: 224px;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    border-radius: 16px;
+    padding-top: 108px;
+    padding-bottom: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    max-width: 370px;
+    border-radius: 24px;
+    padding-top: 165px;
+    padding-bottom: 60px;
+  }
+
+  &:before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 11px 5.34219px 0px rgba(10, 136, 23, 0.25);
+    background-image: url(/src/images/product/ice_200M@1x.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: -110px;
+    left: 40px;
+
+    @media screen and (min-width: 768px) {
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 12px 5.26027px 0px rgba(10, 136, 23, 0.25);
+      background-image: url(/src/images/product/ice_200T@1x.png);
+      top: -122px;
+      left: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 302px;
+      height: 302px;
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 16px 8px 0px rgba(10, 136, 23, 0.25);
+      border-radius: 50%;
+      background-image: url(/src/images/product/ice_302D@1x.png);
+      top: -188px;
+      left: 34px;
+    }
+  }
+}
+.products__item .products__text {
+  @media screen and (min-width: 1200px) {
+    width: 246px;
+    margin-left: 61px;
+    margin-right: 63px;
+  }
+}
+.products__item--second {
+  background: #efd478;
+  border-radius: 24px;
+  &:before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 11px 5.40397px 0px rgba(153, 114, 23, 0.25);
+    background-image: url(/src/images/product/coffee_200M@1x-2.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: -110px;
+    left: 40px;
+
+    @media screen and (min-width: 768px) {
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7),
+          rgba(248, 210, 78, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 12px 5.26027px 0px rgba(153, 114, 23, 0.25);
+      background-image: url(/src/images/product/coffee_200T@1x-2.png);
+      top: -122px;
+      left: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 302px;
+      height: 302px;
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7),
+          rgba(248, 210, 78, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 16px 8px 0px rgba(153, 114, 23, 0.25);
+      background-image: url(/src/images/product/coffee_302D@1x.png);
+      top: -188px;
+      left: 34px;
+    }
+  }
+}
+.products__item--second .products__text {
+  margin-bottom: 53px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 75px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+.products__item--third {
+  background: #d6936d;
+  border-radius: 24px;
+  margin-bottom: 0;
+
+  &:before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 11px 5.41333px 0px rgba(0, 0, 0, 0.25);
+    background-image: url(/src/images/product/milkshakes_200M@1x-1.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+
+    @media screen and (min-width: 768px) {
+      background: linear-gradient(
+          0deg,
+          rgba(213, 117, 63, 0.7),
+          rgba(213, 117, 63, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 12px 5.26027px 0px rgba(0, 0, 0, 0.25);
+      background-image: url(/src/images/product/milkshakes_200T@1x-1.png);
+      top: -122px;
+      left: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 302px;
+      height: 302px;
+      background: linear-gradient(
+          0deg,
+          rgba(213, 117, 63, 0.7),
+          rgba(213, 117, 63, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 16px 8px 0px rgba(0, 0, 0, 0.25);
+      background-image: url(/src/images/product/milkshakes_302D@1x.png);
+      top: -188px;
+      left: 34px;
+    }
+  }
+}
+
+.products__item--third .products__text {
+  margin-bottom: 63px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 75px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+.products__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.23;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 66px;
+  }
+}
+
+.products__text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 176%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 101px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 26px;
+    margin-right: 26px;
+    height: 172px;
+    margin-bottom: 75px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-left: 64px;
+    margin-right: 64px;
+    height: 142px;
+    margin-bottom: 50px;
+  }
+}
+
+.products__button {
+  background: 0 0;
+  cursor: url(/src/images/product/pointer.png), pointer;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  justify-content: center;
+  align-items: center;
+  text-transform: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+
+  &:hover,
+  &:focus {
+    fill: #fcfcfc;
+  }
+}
+
+.products__icon {
+  width: 40;
+  height: 16;
+}
