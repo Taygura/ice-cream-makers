@@ -1,14 +1,14 @@
 .hero {
   background: #84a278;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   @media screen and(min-width:320px) and (max-width: 767px) {
     display: flex;
-    margin: auto;
+    // margin: 0 auto;
   }
   @media screen and(min-width:768px) and (max-width: 1199px) {
     display: flex;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
   .hero__container {
     // max-width: 1200px;
@@ -75,7 +75,6 @@
     .hero__text-arrow {
       width: 200px;
       height: 120px;
-      
     }
     .hero__plate-ice {
       margin-right: 30px;
