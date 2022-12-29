@@ -13,6 +13,62 @@
 
 
 
+.footer_btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: $second-color-text;
+
+  @media screen and (max-width: 767px) {
+    max-width: 200px;
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 42px;
+  }
+}
+
+.footer-locations__button {
+  padding: 10px 38px;
+}
+
+.footer-franchise__button {
+  padding: 10px 53px;
+  border: 2px solid #f8d24e;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 16px;
+  }
+}
+
+.icon-arrow-right {
+  margin-left: 4px;
+  width: 12px;
+  height: 12px;
+  fill: #000;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timings;
+}
+
+.footer-locations__button:focus .icon-arrow-right,
+.footer-franchise__button:focus .icon-arrow-right {
+  @media screen and (min-width: 1200px) {
+    fill: $main-color-text;
+  }
+}
+
+
 /*Footer titles*/
 
 .footer-content {

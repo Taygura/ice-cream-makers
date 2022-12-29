@@ -93,7 +93,7 @@
     display: flex;
     margin: 0 auto;
   }
-  .container {
+  .hero__container {
     // max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -101,8 +101,7 @@
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
-    // align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-image: url(../../src/images/header-hero/b-point@1x.png);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -136,6 +135,12 @@
       @media screen and(min-width:768px) and (max-width: 1199px) {
         margin: 0;
         margin-bottom: 12px;
+      }
+    }
+    .hero__button-product {
+      @media screen and(max-width:1199px) {
+        font-size: 12px;
+        line-height: 15px;
       }
     }
     .hero__icecream {
@@ -220,7 +225,7 @@
   }
   .hero__big-icecream {
     margin-left: 170px;
-    margin-bottom: -5px;
+    margin-right: 94px;
     @media screen and (max-width: 479px) {
       margin: 0 auto;
     }
@@ -230,7 +235,8 @@
     }
     @media screen and(min-width:768px) and (max-width: 1199px) {
       margin: 0;
-      margin-top: 16px;
+      margin-top: 25px;
+      margin-right: 92px;
     }
   }
 
@@ -243,20 +249,20 @@
   //     display: none;
   //   }
   // }
-  // .hero__icon-text {
-  //   font-family: 'Montserrat';
-  //   font-style: normal;
-  //   font-weight: 400;
-  //   font-size: 14px;
-  //   line-height: 17px;
-  //   text-align: right;
-  //   color: #fcfcfc;
-  //   @media screen and(min-width:768px) and (max-width: 1199px) {
-  //     font-size: 8px;
-  //     line-height: 10px;
-  //     width: 46px;
-  //   }
-  // }
+  .hero__label-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #fcfcfc;
+    @media screen and(min-width:768px) and (max-width: 1199px) {
+      font-size: 8px;
+      line-height: 10px;
+      width: 46px;
+    }
+  }
 }
 // .hero__icon-item {
 //   width: 52px;
