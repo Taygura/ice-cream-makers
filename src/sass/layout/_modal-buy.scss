@@ -140,6 +140,56 @@
   left: -1px;
 }
 
+// .buynow__box-title:before {
+//   border-radius: 50%;
+//   content: '';
+//   position: absolute;
+//   top: 60%;
+//   left: -1px;
+//   width: 132px;
+//   height: 140px;
+//   background-repeat: no-repeat;
+// }
+
+// .buynow__box-first {
+//   border: 2px solid #aec6a5;
+// }
+
+// .buynow__box-first:before {
+//   position: absolute;
+//   top: -50%;
+//   left: -1px;
+//   background-image: url(../images/modal-buy/buy1.jpg),
+//     linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+//   box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+// }
+
+// .buynow__box-second {
+//   border: 2px solid #edd276;
+// }
+
+// .buynow__box-second::before {
+//   position: absolute;
+//   top: -50%;
+//   left: -1px;
+//   background-image: url(../images/modal-buy/buy2.jpg),
+//     linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+//   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+// }
+
+// .buynow__box-third {
+//   border: 2px solid #d6936d;
+// }
+
+// .buynow__box-third::before {
+//   position: absolute;
+//   top: -50%;
+//   left: -1px;
+//   background-image: url(../images/modal-buy/buy3.jpg),
+//     linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+//   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+// }
+
 .buynow__box-title:before {
   border-radius: 50%;
   content: '';
@@ -147,7 +197,7 @@
   top: 60%;
   left: -1px;
   width: 132px;
-  height: 140px;
+  height: 132px;
   background-repeat: no-repeat;
 }
 
@@ -159,9 +209,10 @@
   position: absolute;
   top: -50%;
   left: -1px;
+  // height: 142px;
   background-image: url(../images/modal-buy/buy1.jpg),
     linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
-  box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+  box-shadow: 0px 8px 8px 0px rgba(10, 136, 23, 0.25);
 }
 
 .buynow__box-second {
@@ -172,9 +223,10 @@
   position: absolute;
   top: -50%;
   left: -1px;
+  // height: 142px;
   background-image: url(../images/modal-buy/buy2.jpg),
     linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
-  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  box-shadow: 0px 8px 8px 0px rgba(153, 114, 23, 0.25);
 }
 
 .buynow__box-third {
@@ -185,9 +237,10 @@
   position: absolute;
   top: -50%;
   left: -1px;
+  // height: 142px;
   background-image: url(../images/modal-buy/buy3.jpg),
     linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
-  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
 .buynow__card-title {
