@@ -1,0 +1,67 @@
+<!-- hero -->
+
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero__bloсk">
+      <div class="hero__title">
+        <h1 class="hero__paregrahp">
+          ice cream made with <b class="passion">passion</b>
+        </h1>
+        <div class="hero__button">
+          <a href="#products" class="hero__button-product button">Products</a>
+          <a href="#about" class="hero__button-product button button--transparent">How it’s made?</a>
+        </div>
+      </div>
+      <div class="hero__icecream">
+        <picture class="hero__plate-ice">
+          <source srcset="
+              ../src/images/header-hero/plate-ice_b@1x.png 1x,
+              ../src/images/header-hero/plate-ice_b@2x.png 2x
+            " media="(min-width: 1200px)" />
+          <source srcset="
+              ../src/images/header-hero/plate-ice-tablet_@1x.png 1x,
+              ../src/images/header-hero/plate-ice-tablet_@2x.png 2x
+            " media="(min-width: 768px)" />
+          <img src="../src/images/header-hero/plate-ice_b@1x.png" alt="a plate with ice cream" loading="lazy" />
+        </picture>
+        <div class="hero__text-arrow">
+          <h3 class="hero__big-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </h3>
+          <svg class="hero__big-text-icon" width="40" height="16">
+            <use href="../src/images/icons.svg#icon-Arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <picture class="hero__big-icecream">
+      <source srcset="
+          ../src/images/header-hero/desktop_big-ice1x.png 1x,
+          ../src/images/header-hero/desktop_big-ice2x.png 2x
+        " media="(min-width: 1200px)" />
+      <source srcset="
+          ../src/images/header-hero/tablet_t-ice@1x.png 1x,
+          ../src/images/header-hero/tablet_t-ice@2x.png 2x
+        " media="(min-width: 768px)" />
+      <source srcset="
+          ../src/images/header-hero/mobile_s-ice@1x.png 1x,
+          ../src/images/header-hero/mobile_s-ice@2x.png 2x
+        " media="(min-width: 480px)" />
+      <img src="../src/images/header-hero/mobile_s-ice@1x.png" alt="big-icecream" loading="lazy" />
+    </picture>
+    <div class="hero__label">
+      <ul class="hero__label-items">
+        <li class="hero__label-item">
+          <p class="hero__label-counter">16</p>
+          <p class="hero__label-text">cafes</p>
+        </li>
+        <li class="hero__label-item">
+          <p class="hero__label-counter">23</p>
+          <p class="hero__label-text">food trucks</p>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
