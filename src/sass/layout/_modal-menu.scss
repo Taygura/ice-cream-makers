@@ -29,18 +29,53 @@
     margin-top: 140px;
   }*/
 
-  @media screen and(max-height: 520px) {
+  @media screen and (max-height: 520px) {
     margin-bottom: 50px;
   }
 }
 
+.logo {
+  position: absolute;
+  width: 48px;
+  height: 44px;
+
+  &:hover,
+  &:focus {
+    animation: random-shake 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 40px;
+    height: 37px;
+  }
+}
+
+.header__logo {
+  top: 12px;
+}
+
+.logo__icon {
+  width: 100%;
+  height: 100%;
+}
+
 .menu__logo {
+ 
+@media screen and (min-width: 481px){
+  top: 20px;
+  left: 32px;
+ }
+
+@media screen and (max-width: 480px) and (max-width: 321px){
+  top: 20px;
+  left: 20px;
+  }
+
+@media screen and (max-width: 320px) {
   top: 12px;
   left: 32px;
-
-/*  @include medium-min {
-    top: 20px;
-  }*/
+  }
 }
 
 .menu-nav__list {
@@ -73,7 +108,7 @@
 }
 
 .menu-togglen {
-  fill: var(--main-light);
+  fill: white;
   position: absolute;
   top: 16px;
   right: 20px;
