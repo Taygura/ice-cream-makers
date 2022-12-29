@@ -181,22 +181,14 @@
     }
   }
 }
-// .hero__icon-item {
-//   width: 52px;
-//   height: 56px;
-//   @media screen and(min-width:768px) and (max-width: 1199px) {
-//     width: 32px;
-//     height: 34px;
-//   }
-// }
-// .hero__icon-items {
-//   width: 59px;
-//   height: 56px;
-//   @media screen and(min-width:768px) and (max-width: 1199px) {
-//     width: 36px;
-//     height: 34px;
-//   }
-// }
+.hero__bloсk {
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    padding-top: 45px;
+  }
+  @media screen and(max-width: 767px) {
+    padding-top: 50px;
+  }
+}
 .hero__label {
   display: none;
   position: absolute;
