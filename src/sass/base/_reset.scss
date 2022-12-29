@@ -31,21 +31,24 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  //   vertical-align: top;
 }
 html,
 body {
   height: 100%;
   line-height: 1;
 }
-button,
-input {
-  font-weight: inherit;
-  font-size: inherit;
-  color: inherit;
-  font-family: inherit;
-}
+// button,
+// input {
+//   font-weight: inherit;
+//   font-size: inherit;
+//   color: inherit;
+//   font-family: inherit;
+// }
+// button {
+//   background-color: inherit;
+// }
+a,
 button {
-  cursor: pointer;
-  background-color: inherit;
+  text-decoration: none;
+  cursor: url(../images/pointer.png), auto;
 }

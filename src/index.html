@@ -11,25 +11,29 @@
   <link href="https://fonts.googleapis.com/css?family=Seymour+One:regular&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./sass/index.scss" />
+  <link rel="shortcut icon" href="../src/favicon.png" type=”image/png” />
+
   <script type="module" src="./index.js"></script>
 </head>
 <!-- header -->
-<include src="./partials/header-hero.html"></include>
 
 <body>
   <div class="wrapper">
+    <include src="./partials/header.html"></include>
+
     <main>
+      <include src="./partials/hero.html"></include>
       <include src="./partials/product.html"></include>
       <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include>
-      <include src="./partials/swiper-image.html"></include>
       <include src="./partials/swiper-reviews.html"></include>
       <include src="./partials/contakts.html"></include>
     </main>
+
     <include src="./partials/footer.html"></include>
   </div>
+
   <include src="./partials/modal-menu.html"></include>
-  <include src="./partials/burger-menu.html"></include>
   <include src="./partials/modal-buy.html"></include>
   <include src="./partials/modal-product.html"></include>
   <include src="./partials/modal-video.html"></include>
@@ -39,6 +43,10 @@
 
   <script src="../src/js/mobile-menu.js"></script>
   <script src="../src/js/modal.js"></script>
+  <script src="../src/js/modal-franchise.js"></script>
+  <script src="../src/js/modal-locations.js"></script>
+  <script src="../src/js/swiper-reviews.js"></script>
+  <script src="../src/js/modal-product.js"></script>
 </body>
 
 </html>
