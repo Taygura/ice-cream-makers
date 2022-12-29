@@ -57,17 +57,24 @@
                 </ul>
             </div>
         </div>
-        <form class="form-ingredients">   
-                <label for="user-name" class="form-ingredients__label">
+        <form class="form-ingredients">
+            <div class="form__ingredients">
+                <div class="form-ingredients__line">
+                    <label for="user-name" class="form-ingredients__label"></label>
                     <input type="text" name="user-name" id="user-name" placeholder="Name"
-                        class="form-ingredients__input"></label>
-                <label for="user-tel" class="form-ingredients__label">
-                    <input type="tel" name="user-tel" id="user-tel" placeholder="Phone"
-                        class="form-ingredients__input"></label>
-                <lable for="user-text" class="form-ingredients__label">
+                        class="form-ingredients__input">
+                </div>
+                <div class="form-ingredients__line">
+                    <label for="user-tel" class="form-ingredients__label"></label>
+                    <input type="tel" name="user-tel" id="user-tel" placeholder="Phone" class="form-ingredients__input">
+                </div>
+                <div class="form-ingredients__line">
+                    <lable for="user-text" class="form-ingredients__label"></lable>
                     <textarea name="user-text" id="user-text" placeholder="Comment" class="modal-textarea"></textarea>
-                </lable>
+                </div>
+            </div>
             <button type="submit" class="header__button--ingredient button">Submit</button>
         </form>
     </div>
-
+</div>
+</div>

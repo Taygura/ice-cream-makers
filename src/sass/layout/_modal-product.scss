@@ -142,15 +142,25 @@
 }
 
 .ingredients-box__item {
-  width: 65px;
-  height: 90px;
+  width: 53px;
+  height: 72px;
   border-radius: 40px;
+
+  @media screen and (min-width: 768px) {
+    width: 65px;
+    height: 90px;
+  }
 }
 
 .ingredients-box__item--cream {
-  width: 65px;
-  height: 90px;
+  width: 53px;
+  height: 72px;
   border: 2px solid #9cbe8f;
+
+  @media screen and (min-width: 768px) {
+    width: 65px;
+    height: 90px;
+  }
 }
 
 .ingredients-box--figure {
@@ -159,8 +169,8 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 53px;
-  height: 53px;
+  width: 43px;
+  height: 43px;
   margin-top: -2px;
 
   font-family: 'Montserrat';
@@ -173,6 +183,11 @@
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 
   color: #131313;
+
+  @media screen and (min-width: 768px) {
+    width: 53px;
+    height: 53px;
+  }
 }
 
 .ingredients-box--text {
@@ -224,27 +239,14 @@
   color: #131313;
 }
 
-.form-ingredients {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.form-ingredients__line {
+  margin-bottom: 16px;
 }
 
 .form-ingredients__line {
-  margin-bottom: 24px;
-  width: 100%;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
-  }
-}
-
-.form-ingredients__label {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 16px;
 }
 
 .form-ingredients__input {
@@ -308,6 +310,9 @@
 }
 
 .header__button--ingredient {
+  display: flex;
   padding: 12px 34px;
   background: #f8d24e;
+  margin-left: auto;
+  margin-right: auto;
 }
