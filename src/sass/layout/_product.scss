@@ -154,6 +154,9 @@
       left: 34px;
     }
   }
+  &:hover {
+    box-shadow: 0px 11px 11px 11px rgba(10, 136, 23, 0.25);
+  }
 }
 .products__item .products__text {
   @media screen and (min-width: 1200px) {
@@ -212,6 +215,9 @@
       top: -188px;
       left: 34px;
     }
+  }
+  &:hover {
+    box-shadow: 0px 11px 11px 11px rgba(153, 114, 23, 0.25);
   }
 }
 .products__item--second .products__text {
@@ -274,6 +280,9 @@
       top: -188px;
       left: 34px;
     }
+  }
+  &:hover {
+    box-shadow: 0px 11px 11px 11px rgba(0, 0, 0, 0.25);
   }
 }
 
