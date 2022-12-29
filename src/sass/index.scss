@@ -12,7 +12,9 @@
 @import './utils/visually-hidden';
 
 // layout
-@import './layout/header-hero';
+// @import './layout/header-hero';
+@import url(./layout/_header.scss);
+@import './layout/hero';
 @import './layout/product';
 @import './layout/about';
 @import './layout/advantages';
