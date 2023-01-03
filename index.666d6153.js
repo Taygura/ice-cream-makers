@@ -1,0 +1,2 @@
+new Swiper(".reviews-slider",{paginaion:{el:".swiper-pagination",clickable:!0,dynamicBullets:!0},slideToClickedSlide:!0,hashNavigation:{watchState:!0},keyboard:{enabled:!0,onlyInViewport:!0,pageUpDown:!0},mousewheel:{sensitivity:1,eventsTarget:".reviews-slider"},loop:!0,loopedSlides:3,autoplay:{delay:1e3,stopOnLastSlide:!1,disableOnInteraction:!1},speed:1e3,effect:"fade",fadeEffect:{crossFade:!0}});
+//# sourceMappingURL=index.666d6153.js.map
